@@ -99,4 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     new PureCounter();
+
+    const glightbox = GLightbox({
+        selector: '.glightbox'
+    });
 });
