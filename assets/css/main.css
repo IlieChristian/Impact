@@ -62,10 +62,6 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.active {
-    color: var(--color--white) !important;
-}
-
 ul {
     list-style-type: none;
 }
@@ -146,6 +142,10 @@ section {
 
 .dropdown>a {
     text-decoration: none;
+}
+
+.navbar .active {
+    color: var(--color--white) !important;
 }
 
 @media (min-width: 960px) {
@@ -568,7 +568,7 @@ section {
 /* Testimonials */
 
 .testimonials-wrap {
-    padding-left: 10px;
+    padding: 0 10px;
 }
 
 .testimonials-item {
@@ -633,6 +633,7 @@ section {
     font-style: italic;
     margin: 15px auto;
     font-size: 15px;
+    line-height: 1.4;
 }
 
 .testimonials .swiper-pagination {
@@ -651,5 +652,68 @@ section {
     background-color: var(--color--primary);
 }
 /* End-Testimonials */
+
+/* Portfolio */
+
+.portfolio-filter {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.portfolio-filter li {
+    padding: 0 10px;
+    transition: ease-in-out .2s;
+}
+
+.portfolio-filter li:hover {
+    color: var(--color--hover);
+    cursor: pointer;
+}
+
+.filter-active {
+    color: var(--color--hover);
+}
+
+.portfolio-wrap {
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    background-color: var(--color--white);
+    overflow: hidden;
+}
+
+.portfolio-wrap img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: .3s;
+}
+
+.portfolio-wrap img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-info {
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid #f3f3f3;
+    background-color: var(--color--white);
+    padding: 15px 20px;
+}
+
+.portfolio-info h4 {
+    margin-bottom: 10px;
+}
+
+.portfolio-info h4 a {
+    color: var(--color--default);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.portfolio-info p {
+    font-size: 14px;
+    color: var(--color--default);
+}
+
+/* End-Portfolio */
 
 /* End-Main */
