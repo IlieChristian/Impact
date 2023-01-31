@@ -108,9 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let portfolionIsotope = document.querySelector('.portfolio-isotope');
 
     if(portfolionIsotope) {
-        let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolioIsotope.getAttribute('data-portfolio-filter') : "*";
-        let portfolioLayout = portfolionIsotope.getAttribute('data-portfolio-layout') ? portfolioIsotope.getAttribute('data-portfolio-layout') : "masonry";
-        let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolioIsotope.getAttribute('data-portfolio-sort') : "original-order"
+        let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolionIsotope.getAttribute('data-portfolio-filter') : "*";
+        let portfolioLayout = portfolionIsotope.getAttribute('data-portfolio-layout') ? portfolionIsotope.getAttribute('data-portfolio-layout') : "masonry";
+        let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolionIsotope.getAttribute('data-portfolio-sort') : "original-order"
         
         window.addEventListener('load', () => {
             let portfolioIsotope = new Isotope(document.querySelector('.portfolio-container'), {
@@ -119,19 +119,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 layoutMode: portfolioLayout,
                 sortby: portfolioSort,
             });
-        });
+        
 
-        let menuFilters = document.querySelectorAll('.portfolio-filter li');
-        menuFilters.forEach(function (el) {
-            el.addEventListener('click', () => {
-                document.querySelector('.filter-active').classList.remove('.filter-active');
-                this.classList.add('filter-active');
-                portfolioIsotope.arrange({
-                    filter: this.getAttribute('data-filter')
+            let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-filter li');
+            menuFilters.forEach(function (el) {
+                el.addEventListener('click', function () {
+                    document.querySelector('.filter-active').classList.remove('filter-active');
+                    this.classList.add('filter-active');
+                    portfolioIsotope.arrange({
+                        filter: this.getAttribute('data-filter')
+                    });
+                    
                 });
-                console.log(".")
-            });
-        }, false);
+            },false);
+        });
     };
 
 });
