@@ -49,7 +49,7 @@
   --bs-secondary-text: #6c757d;
   --bs-success-text: #146c43;
   --bs-info-text: #087990;
-  --bs-warning-text: #997404;
+  --bs-warning-text: #997404;--bs-body-color
   --bs-danger-text: #b02a37;
   --bs-light-text: #6c757d;
   --bs-dark-text: #495057;
@@ -174,7 +174,7 @@
   --bs-code-color: #e685b5;
   --bs-border-color: #495057;
   --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
-}
+}--bs-body-bg
 
 *,
 *::before,
@@ -4541,7 +4541,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
-  background-color: var(--bs-accordion-btn-bg);
+  background-color: var(--bs-emphasis-color);
   border: 0;
   border-radius: 0;
   overflow-anchor: none;

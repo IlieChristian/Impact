@@ -909,4 +909,196 @@ section {
 
 /* End-Pricing */
 
+/* FAQ */
+
+.faq .content h3 { 
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.faq .content p { 
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.accordion-header {
+    background-color: var(--color--white);
+}
+
+.accordion-item {
+    border: none !important;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 6%);
+    border-radius: 10px;
+}
+
+.faq .accordion-button {
+    padding: 20px 50px 20px 20px;
+    font-weight: 600;
+    border: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.faq .accordion-button .num {
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 0;
+    color: var(--color--primary);
+}
+
+.accordion-button { 
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color--primary) !important;
+    background-color: #fff !important;
+}
+
+/* End-FAQ */
+
+/* Recent-Posts */
+
+.recent-posts article {
+    background-color: var(--color--white);
+    padding: 30px;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.recent-posts .post-img { 
+    margin: -30px -30px 15px -30px;
+    max-height: 240px;
+    overflow: hidden;
+}
+
+.post-category {
+    font-size: 16px;
+    color: #6f6f6f;
+    margin-bottom: 10px;
+}
+
+.recent-posts article .title {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.recent-posts article .title a {
+    color: #000;
+    transition: .3s;    
+}
+
+.recent-posts article .title a:hover {
+    color: var(--color--hover);
+}
+
+.post-author-img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-author { 
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.post-date {
+    margin-bottom: 0;
+}
+
+/* End-Recent-Posts */
+
+/* Contact */
+
+.info-container {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--color--primary);
+    padding: 20px;
+    height: 100%;
+}
+
+.info-item { 
+    background-color: var(--color--hover);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: var(--color--white);
+}
+
+.info-item i { 
+    font-size: 20px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255 ,255 ,255, 20%);
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.info-item:hover i {
+    background-color: var(--color--white);
+    color: var(--color--primary);
+}
+
+.info-item h4 { 
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.php-email-form {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color--white);
+    box-shadow: 0px 2px 25px rgb(0 0 0 / 10%);  
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}   
+
+.php-email-form input, .php-email-form textarea {
+    border-radius: 0;
+}
+
+.php-email-form input[type=text]:focus {
+    border: 0 !important;
+}
+
+.php-email-form input[type=text], .php-email-form input[type=email], .php-email-form textarea {
+    padding: 12px 15px;
+
+/* End-Contact */
+
 /* End-Main */
