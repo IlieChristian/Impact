@@ -327,10 +327,20 @@ section {
     box-shadow: 0 0 29px 0 rgb(0 0 0 / 8%);
     height: 100%;
     width: 100%;
+    position: relative;
+    transition: .3s;
 }
 
-.hero .icon-box-z:hover {
+.hero .icon-box-z:hover{
     background-color: #b1091f;
+}
+
+.hero .icon-box-z i {
+    transition: .3s;
+}
+
+.hero .icon-box-z:hover i {
+    color: var(--color--white);
 }
 
 .icon-box-z h4 a {
@@ -801,7 +811,7 @@ section {
     transition: .3s;
 }
 
-.portfolio-wrap img:hover {
+.portfolio-wrap:hover img{
     transform: scale(1.1);
 }
 
@@ -821,6 +831,11 @@ section {
     color: var(--color--default);
     font-size: 18px;
     font-weight: 600;
+    transition: .3s;
+}
+
+.portfolio-info h4 a:hover {
+    color: var(--color--hover);
 }
 
 .portfolio-info p {
@@ -1364,7 +1379,7 @@ section {
     right: 15px;
     bottom: -15px;
     z-index: 99999;
-    background: var(--color--orange);
+    background: var(--color--green-sc);
     width: 44px;
     height: 44px;
     border-radius: 50px;
