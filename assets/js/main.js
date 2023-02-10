@@ -172,4 +172,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', navbarlinksActive);
     document.addEventListener('scroll', navbarlinksActive);
+
+    let mobileNavShow = document.querySelector('.mobile-nav-show');
+    let mobileNavHide = document.querySelector('.mobile-nav-hide');
+    let navbar = document.getElementById('navbar');
+    let body = document.querySelector("body");
+
+    mobileNavShow.addEventListener('click', () => {
+        navbar.setAttribute('style', 'display:block !important');
+        mobileNavShow.classList.add("d-none");
+        mobileNavHide.classList.remove("d-none");
+        body.classList.add("mobile-nav-active");
+    });
+    mobileNavHide.addEventListener('click', () => {
+        navbar.setAttribute('style', 'display:none !important');
+        mobileNavShow.classList.remove("d-none");
+        mobileNavHide.classList.add("d-none");
+        body.classList.remove("mobile-nav-active");
+    });
 });
