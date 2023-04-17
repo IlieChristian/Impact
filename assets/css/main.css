@@ -345,6 +345,12 @@ section {
     }
 }
 
+@media (max-width: 960px) {
+    .drop-down-nav>li {
+        padding: 10px 0 10px 20px; 
+    }
+}
+
 .sticked-header-offset {
     margin-top: 45px;
 }
